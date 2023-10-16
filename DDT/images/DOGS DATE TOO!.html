@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOGS DATE TOO!</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Links that sit on top -->
+    <nav class="navbar">
+        <ul class="topnav">
+            <li><a class = "active" href = "#">HOME</a></li>
+            <li><a href = "#">ABOUT</a></li>
+            <li><a href = "#">HOW IT WORKS</a></li>
+            <li><a href = "#">INTERESTING DATA</a></li>
+            <li class><a href = "#">CREATE PROFILE</a></li>
+            <li class = "right"><a href = "#">LOGIN</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class = "couple-walking-container">
+            <img class="frontpage-image" src="images/couple-walking.png" alt = "married couple walking a dog" >
+        </section>
+        <!--How it works section-->
+        <section class = "how-it-works-container">
+            <div class = "steps-container">
+                <div id = "one">
+                    <div id = "step-one">
+                        GETTING STARTED
+                    </div>
+                    <div id = "step-one-explanation">
+                        Click on CREATE PROFILE button on the top of the page.
+                    </div>
+                </div>
+                <div id = "two">
+                    <div id = "step-two-explanation">
+                        <p>Fill the form and click CREATE, Do not forget to add a cute picture!</p>
+                    </div>
+                    <div id = "step-two">
+                        WHAT INFO?
+                    </div>
+                </div>
+                <div id = "three">
+                    <div id = "step-three">
+                        ADDITIONAL STEP
+                    </div>
+                    <div id = "step-three-explanation">
+                        <p>Do a compatability quiz to rase chances of finding a perfect match for your canine friend! Happy searching!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class = "interesting-data-container">
+            <article class = "interesting-data-article">
+                <div class = graph-container>
+                    <img class="frontpage-image" src="images/graph.png" alt = "graph-of-most-common-breeds">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor dignissim mi, nec vulputate massa ultrices eget. Suspendisse potenti. Nunc elementum pretium erat, vel interdum lorem pharetra quis. Nullam eget enim eu quam vehicula commodo ac non quam. Donec eleifend velit vel nisi varius eleifend. Aenean eu magna nibh.</p>
+            </article>
+        </section>
+
+        <section class = "about-us-container">
+            <article>
+                
+            </article>
+        </section>
+    </main>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>

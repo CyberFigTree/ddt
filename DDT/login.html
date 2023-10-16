@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class = "login-html" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOGS DATE TOO!</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+<!-- Nav menu -->
+<header class = "header">
+  <img class="logo" src="images/logo.png" alt="logo">
+  <nav>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+    </label>
+    <ul class ="nav__links">
+        <li><a href = "about.html">ABOUT</a></li>
+        <li><a href = "howitworks.html">HOW IT WORKS</a></li>
+        <li><a href = "createprofile.html" id = "cta">CREATE PROFILE</a></li>
+        <li><a class="active" href="login.html">LOGIN</a></li>
+    </ul>
+  </nav>
+</header>
+<div id="landing-login">
+  <div class="coverslide">
+    <img src = "images/slide2.jpg">
+    <div class = "form">
+      <form id = "create" action="action.php">
+        <label for="" aria-hidden="true">Welcome back!</label>
+        <input class = "input-login" type="email" name="email" placeholder="Email" required="">
+        <input class = "input-login" type="password" name="pswd" placeholder="Password" required="">
+        <button onclick="myFunction()" value = "CONTINUE" class="form-button">LOGIN</button>
+      </form>
+    </div>
+  </div>
+</div> 
+<footer class = "login-footer">
+  <ul class = "footer-links">
+    <li><a href = "coming.html">Copyright</a></li>
+    <li><a href = "coming.html">Terms & Conditions</a></li>
+    <li><a href = "coming.html">Privacy</a></li>
+  </ul>
+</footer>
+</body>
+</html>  
