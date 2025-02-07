@@ -1,0 +1,14 @@
+# macOS system files
+.DS_Store
+
+# IDE/editor files
+*.log
+.idea/
+.vscode/
+
+# Sensitive files
+.env
+secrets/
+*.pem
+*.key
+*.crt

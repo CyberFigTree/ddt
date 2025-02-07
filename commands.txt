@@ -1,0 +1,21 @@
+﻿# Build Commands
+docker-compose build
+
+docker-compose up -d
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Commands used for machines creation 
+docker-machine create manager --google-project driven photon-394700 --driver google --google-zone australia-southeast1-b --google-machine-type n1-standard-1 --google-machine-image https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/family/ubuntu-2204-lts
+
+docker-machine create worker1 --google-project driven photon-394700 --driver google --google-zone australia-southeast1-b --google-machine-type n1-standard-1 --google-machine-image https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/family/ubuntu-2204-lts
+
+docker-machine create worker2 --google-project driven photon-394700 --driver google --google-zone australia-southeast1-b --google-machine-type n1-standard-1 --google-machine-image https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/family/ubuntu-2204-lts
+
+gcloud compute ssh manager --zone=australia-southeast1-b
+
+sudo docker swarm init --advertise-addr $(hostname -i)
+
+sudo docker swarm join --token SWMTKN-1-19fztlcxtpnt4zx5srl5t6y59g7rf7a73klngjy5k5c9fmd19o-dqvq0yof1yfssta3qucik0b3l 10.152.0.8:2377
+
+#deployment:
+sudo docker stack deploy -c docker-compose.yml DDT

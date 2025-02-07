@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class = "createprofile-html" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOGS DATE TOO!</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <!-- Nav menu -->
+  <header class = "about-header">
+    <img class="logo" src="images/logo.png" alt="logo">
+    <nav>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+      </label>
+      <ul class ="nav__links">
+          <li><a href = "index.html">ABOUT</a></li>
+          <li><a href = "howitworks.html">HOW IT WORKS</a></li>
+          <li><a class="cta" href="login.html">LOGIN</a></li>
+          <li><a class = "active" href = "createprofile.html" id = "cta">SIGN UP</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <div class="form-container">
+      <div class="form-header">
+          Create Profile
+      </div>
+      <form id = "create" action="signup.php" method ="post">
+          <input type="text" name = "name" class="form-control" placeholder="Dog's name" required>
+          <input type="text" name = "email" class="form-control" placeholder="Email" required>
+
+          <input type="password" name = "password" class="form-control" placeholder="Password">
+          <button onclick="myFunction()" value = "CONTINUE" class="form-button">CONTINUE</button>
+      </form>
+  </div>
+
+</body>
+</html>
+    </main>
+    <footer class = "createprofile-footer">
+      <p>By signing up, you agree to our <a href =coming.html style = "font-size: 8px; text-decoration: underline;">Terms and Conditions</a>. See how we use your data in our <a href = "coming.html" style = "font-size: 8px; text-decoration: underline;">Privacy Policy</a>.</p>
+    </footer>
