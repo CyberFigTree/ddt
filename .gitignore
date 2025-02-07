@@ -1,6 +1,9 @@
 # macOS system files
 .DS_Store
 
+# Other stuff
+DDT/
+
 # IDE/editor files
 *.log
 .idea/
